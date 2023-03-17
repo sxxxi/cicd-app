@@ -1,0 +1,9 @@
+# build.args: [ - <var>=<val> | <var>: <val> ]
+
+
+services:
+  sprong:
+    build: 
+      context: .
+      args:
+        - YO_MOMMA: huge
