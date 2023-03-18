@@ -1,9 +1,21 @@
 # build.args: [ - <var>=<val> | <var>: <val> ]
 
-
+# I plan on creating 2 more images for frontend and database. 
+# For final touches, I will add a load balancer once the pipeline 
+# has matured(? huh ?)
 services:
-  sprong:
+  student-mgmt-api:
     build: 
-      context: .
+      context: backend 
+    ports: 
+      - 8080:8080
+      - 8081:8080
+  portfolio-front:
+    build:
+      context: foo
+      # dockerfile: prod.Dockerfile
       args:
-        - YO_MOMMA: huge
+        - SUPBASE_URL="https://yxciqrauwvmxvceeymel.supabase.co"
+        - SUPABASE_ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4Y2lxcmF1d3ZteHZjZWV5bWVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NzE1NDAsImV4cCI6MTk5MzM0NzU0MH0.EhWlaP7cCfyh33YEY_TpmB_aA3qeeADqklb_OClg4eM"
+    ports:
+      - 3000:3000
