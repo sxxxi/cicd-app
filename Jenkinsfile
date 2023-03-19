@@ -1,16 +1,12 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'node:19-alpine' }
+    }
     
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
-                sh 'mvn clean compile'
-                sh 'mvn clean'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh './scripts/check-container-exist.sh spring-img spring-img-deploy'
+            sh 'node --version'
             }
         }
     }
