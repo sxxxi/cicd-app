@@ -1,3 +1,4 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = git@github.com:sxxxi/portfolio.git
+	branch = main
