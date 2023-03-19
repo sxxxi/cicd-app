@@ -10,12 +10,21 @@ services:
     ports: 
       - 8080:8080
       - 8081:8080
+    networks:
+      - back-net
   portfolio-front:
     build:
-      context: foo
-      # dockerfile: prod.Dockerfile
+      context: portfolio
       args:
         - SUPBASE_URL="https://yxciqrauwvmxvceeymel.supabase.co"
         - SUPABASE_ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4Y2lxcmF1d3ZteHZjZWV5bWVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NzE1NDAsImV4cCI6MTk5MzM0NzU0MH0.EhWlaP7cCfyh33YEY_TpmB_aA3qeeADqklb_OClg4eM"
     ports:
       - 3000:3000
+    networks:
+      - front-net
+
+
+networks:
+  front-net:
+
+  back-net:

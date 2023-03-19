@@ -53,26 +53,12 @@ stay tuned :|
 - Continue compose
 
 
-  // Default language.
-  "spring.initializr.defaultLanguage": "Java",
-
-  // Default Java version.
-  "spring.initializr.defaultJavaVersion": "11",
-
-  // Default value for Artifact Id.
-  "spring.initializr.defaultArtifactId": "demo",
-
-  // Default value for Group Id.
-  "spring.initializr.defaultGroupId": "com.example",
-
-  // Spring Initializr Service URL(s). If more than one url is specified, it requires you to select one every time you create a project.
-  "spring.initializr.serviceUrl": [ "https://start.spring.io" ],
-
-  // Default value for Packaging. Supported values are "JAR" and "WAR".
-  "spring.initializr.defaultPackaging": "JAR",
-
-  // Default value for the method of openining the newly generated project. Supported values are "", "Open" and "Add to Workspace".
-  "spring.initializr.defaultOpenProjectMethod": "Add to Workspace",
+## Mar. 19
+- Discovered git submodules
+- Wrote docker deployment file to portfolio frontend
+- Started to have a suspicion that what I'm doing is setting up microservices hmmm
+### TODO
+- Create backend api for my portfolio 
 
 
 
