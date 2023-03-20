@@ -55,6 +55,7 @@ stay tuned :|
 
 ## Mar. 19
 - Discovered git submodules
+- Discovered how docker buildx handles build stages the hard way...
 - Wrote docker deployment file to portfolio frontend
 - Started to have a suspicion that what I'm doing is setting up microservices hmmm
 ### TODO
