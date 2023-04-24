@@ -2,3 +2,7 @@
 	path = portfolio
 	url = git@github.com:sxxxi/portfolio.git
 	branch = main
+[submodule "libraria-backend"]
+	path = Libraria
+	url = git@github.com:sxxxi/Libraria
+	branch = main
